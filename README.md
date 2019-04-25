@@ -17,3 +17,6 @@ to add API access for everything that can be done through the HTML interface.
 ## Progress
 wdb is currently a work-in-progress and should not be considered production-ready. This repository is being used as a
 place for me to store my work as I go, and some revisions may not be secure or even functional. 
+
+## Installation
+Wait for me to post an installer script.
