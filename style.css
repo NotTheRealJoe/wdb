@@ -1,0 +1,40 @@
+body {
+    font-family: Roboto;
+    background-color: #333333;
+    color: white;
+}
+td {
+    border: 1px solid #777777;
+}
+table {
+    border-collapse: collapse;
+}
+thead > tr {
+    font-weight: bold;
+}
+a,a:visited {
+    color: white;
+}
+.neutral {
+    color: gray;
+}
+.good {
+    color: green;
+}
+.btn {
+    padding: 0.25em;
+    border-top: 1px solid #777777;
+    border-right: 2px solid #777777;
+    border-bottom: 2px solid #777777;
+    border-left: 1px solid #777777;
+    text-decoration: none
+}
+.btn:active {
+    border-top: 2px solid #777777;
+    border-right: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    border-left: 2px solid #777777;
+}
+a.icon {
+    text-decoration: none;
+}
