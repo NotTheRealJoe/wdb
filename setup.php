@@ -1,6 +1,18 @@
 <?php
 require_once('db.php');
 
+// A variable so pages can check what content type they should output
+foreach($headers as $name => $content) {
+    if(strtolower($name) == 'accept') {
+        $accept_header = strtolower($content);
+        break;
+    }
+}
+if(!$accept_header) {
+    http_response_code(406);
+    exit;
+}
+
 // Authentication
 function unauthenticated() {
     http_response_code(401);
