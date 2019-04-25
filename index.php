@@ -43,7 +43,7 @@ if(strpos($accept_header, 'text/html') !== false) {
     }
     echo '</tr></thead><tbody>';
     foreach ($data as $row) {
-        echo '<tr><td><a class="icon" href="update_form.php?essid='.$row['essid'].'">&#x270F;&#xFE0F;</a> &#x1F5D1;&#xFE0F;</td>';
+        echo '<tr><td><a class="icon" href="update_form.php?essid='.$row['essid'].'">&#x270F;&#xFE0F;</a> <a class="icon" href="delete.php?essid='.$row['essid'].'">&#x1F5D1;&#xFE0F;</a></td>';
         foreach ($row as $col) {
             echo "<td>$col</td>";
         }

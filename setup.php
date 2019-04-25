@@ -2,7 +2,7 @@
 require_once('db.php');
 
 // A variable so pages can check what content type they should output
-foreach($headers as $name => $content) {
+foreach(getallheaders() as $name => $content) {
     if(strtolower($name) == 'accept') {
         $accept_header = strtolower($content);
         break;
